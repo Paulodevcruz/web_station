@@ -53,3 +53,5 @@ git push origin feature/sua-feature
 ```
 
 6. Abra um pull request para revisão.
+
+#BEM VINDOS(AS)
