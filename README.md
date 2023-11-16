@@ -1,5 +1,8 @@
 # W & B RECORDINGS - Página WebApp
 
+<div align="center">
+<img src="./assets/img/logo%20(2).gif" width="300px">
+
 Este é um projeto de website de música desenvolvido para pesquisas musicais. A página permite aos usuários buscar artistas por discografia, biografias e letras de músicas.
 
 ## Funcionalidades Principais
