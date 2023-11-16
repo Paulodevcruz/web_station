@@ -18,13 +18,8 @@ Este é um projeto de website de música desenvolvido para pesquisas musicais. A
 
 - JavaScript: Para tornar a página interativa e permitir buscas dinâmicas de artistas.
 
-## Como Usar
+##  1 Como Usar
 
-1. Clone este repositório em sua máquina local usando o seguinte comando:
-
-   ```bash
-   https://github.com/Paulodevcruz/web_station.git
-   ```
 
 2. Abra o arquivo index.html em seu navegador para acessar a página principal.
 
@@ -32,26 +27,5 @@ Este é um projeto de website de música desenvolvido para pesquisas musicais. A
 
 4. Clique nos resultados para obter mais informações sobre os artistas.
 
-## Contribuições
-
-1. Faça um fork do repositório.
-
-2. Clone o fork em sua máquina local.
-
-3. Crie uma nova branch para suas alterações:
-
-```
-git checkout -b feature/sua-feature
-```
-
-4. Faça suas alterações e adicione commits significativos.
-
-5. Envie as alterações para o GitHub:
-
-```
-git push origin feature/sua-feature
-```
-
-6. Abra um pull request para revisão.
 
 # BEM VINDOS(A)
