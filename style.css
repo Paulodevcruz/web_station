@@ -1,14 +1,9 @@
-.open {
-    display: none;
-}
-
-
-
 body {
     background-image: url(./assets/img/logo\ \(2\).gif);
     background-position: center;
     background-repeat: repeat;
-    background-size: 15vw ; /* Isso ajusta a imagem para cobrir toda a área do body */
+    background-size: 15vw;
+    /* Isso ajusta a imagem para cobrir toda a área do body */
     /* Adicione outras propriedades de estilo conforme necessário */
     transition: background-size 0.5s ease;
 }
@@ -16,18 +11,24 @@ body {
 
 
 body {
-    margin: 0; /* Remover a margem padrão do body para garantir um layout consistente */
-    padding: 0; /* Remover o preenchimento padrão do body */
-    min-height: 100vh; /* Garantir que o body ocupe pelo menos a altura total da viewport */
+    margin: 0;
+    /* Remover a margem padrão do body para garantir um layout consistente */
+    padding: 0;
+    /* Remover o preenchimento padrão do body */
+    min-height: 100vh;
+    /* Garantir que o body ocupe pelo menos a altura total da viewport */
     display: flex;
     flex-direction: column;
 }
 
 footer {
-    margin-top: auto; /* Ajusta a margem superior para empurrar o footer para o final da página */
-  
-    color: #fff; /* Cor de texto opcional para o footer */
-    padding: 10px; /* Espaçamento interno para o footer */
+    margin-top: auto;
+    /* Ajusta a margem superior para empurrar o footer para o final da página */
+
+    color: #fff;
+    /* Cor de texto opcional para o footer */
+    padding: 10px;
+    /* Espaçamento interno para o footer */
 }
 
 body {
@@ -40,7 +41,7 @@ body {
 
 footer {
     margin-top: auto;
-    
+
     color: #fff;
     text-align: center;
     opacity: 0;
@@ -50,35 +51,145 @@ footer {
 }
 
 footer p {
-    font-size: 30px; /* Ajuste o tamanho da fonte conforme necessário */
-    font-weight: bold; /* Adiciona negrito ao texto */
+    font-size: 30px;
+    /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold;
+    /* Adiciona negrito ao texto */
 }
 
 ul.redes-sociais {
-    list-style: none; /* Remove os marcadores de lista */
+    list-style: none;
+    /* Remove os marcadores de lista */
     padding: 0;
 }
 
 ul.redes-sociais li {
-    display: inline-block; /* Exibe os itens da lista em linha */
-    margin-right: 10px; /* Adiciona espaçamento entre os itens */
+    display: inline-block;
+    /* Exibe os itens da lista em linha */
+    margin-right: 10px;
+    /* Adiciona espaçamento entre os itens */
 }
 
 ul.redes-sociais li a {
     text-decoration: none;
-    color: #e7dcdc; /* Cor dos links */
-    font-weight: bold; /* Adiciona negrito aos links */
+    color: #e7dcdc;
+    /* Cor dos links */
+    font-weight: bold;
+    /* Adiciona negrito aos links */
 }
 
 /* Adicione o resto do seu estilo abaixo desta linha */
 @keyframes fadeIn {
     from {
-        opacity: 0; /* Opacidade inicial */
+        opacity: 0;
+        /* Opacidade inicial */
     }
+
     to {
-        opacity: 1; /* Opacidade final */
+        opacity: 1;
+        /* Opacidade final */
     }
 }
 
 
 
+/* Adicione estas regras ao seu arquivo style.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #fff;
+    z-index: 999;
+}
+
+/* Substitua a regra background-color existente pela seguinte: */
+
+nav {
+    background-color: rgba(199, 177, 177, 0.8);
+    /* Cor com 80% de opacidade */
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav.open {
+    width: 220px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Estilo padrão para o áudio */
+audio {
+    width: 100%;
+    max-width: 400px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Ajuste para dispositivos móveis e telas menores */
+@media only screen and (max-width: 400px) {
+    audio {
+        max-width: 100%;
+        /* Ajusta a largura máxima para preencher a largura da tela */
+    }
+}
