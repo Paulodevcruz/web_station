@@ -1,4 +1,4 @@
-# W & B RECORDINGS - Página WebApp
+# W & B RECORDINGS -
 
 <div align="center">
 <img src="./assets/img/logo%20(2).gif" width="300px">
