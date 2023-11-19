@@ -26,12 +26,11 @@ Bem-vindo(a) ao Música Descoberta, seu destino para explorar artistas, discogra
 
 ## Como Explorar
 
-1. Faça o download ou clone este repositório em seu computador.
 
-2. Abra o arquivo `index.html` no seu navegador para acessar a página principal.
+1. Abra o arquivo `index.html` no seu navegador para acessar a página principal.
 
-3. Utilize a barra de pesquisa para descobrir artistas por nome, discografia ou letras de músicas.
+2. Utilize a barra de pesquisa para descobrir artistas por nome, discografia ou letras de músicas.
 
-4. Clique nos resultados para obter informações detalhadas sobre os artistas.
+3. Clique nos resultados para obter informações detalhadas sobre os artistas.
 
 # Desfrute da Sua Jornada Musical! 🎶
