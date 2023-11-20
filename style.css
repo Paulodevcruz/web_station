@@ -6,6 +6,9 @@ body {
     /* Isso ajusta a imagem para cobrir toda a área do body */
     /* Adicione outras propriedades de estilo conforme necessário */
     transition: background-size 0.5s ease;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 
@@ -76,8 +79,13 @@ ul.redes-sociais li a {
     /* Cor dos links */
     font-weight: bold;
     /* Adiciona negrito aos links */
+    
 }
 
+ul.redes-sociais li a:hover {
+    color: #ff6600; /* Altere para a cor desejada ao passar o mouse */
+    /* Adicione mais estilos conforme necessário */
+}
 /* Adicione o resto do seu estilo abaixo desta linha */
 @keyframes fadeIn {
     from {
@@ -108,9 +116,11 @@ body {
     font-size: 24px;
     color: #fff;
     z-index: 999;
+    
+   
 }
 
-/* Substitua a regra background-color existente pela seguinte: */
+
 
 nav {
     background-color: rgba(199, 177, 177, 0.8);
@@ -193,3 +203,60 @@ audio {
         /* Ajusta a largura máxima para preencher a largura da tela */
     }
 }
+
+.video-iframe {
+    position: relative;
+    top: 80px; /* ajuste conforme necessário */
+    left: 80px; /* ajuste conforme necessário */
+    
+}
+
+.page-title {
+    position: absolute;
+    top: 450px; /* ajuste conforme necessário */
+    left: 100px; /* ajuste conforme necessário */
+    font-family: 'Vina Sans', sans-serif;
+    color: #7cadf8; 
+    font-size: 50px;
+    
+}
+
+
+a {
+    color: #e7ebf5; /* Cor do texto do link */
+    text-decoration: none; /* Remover sublinhado padrão de links */
+    font-weight: bold; /* Deixar o texto em negrito, se desejar */
+    /* Adicione mais estilos conforme necessário */
+}
+
+/* Estilo para o link quando hover (quando o mouse está sobre ele) */
+a:hover {
+    color: #ff6600; /* Altere para a cor desejada ao passar o mouse */
+    /* Adicione mais estilos conforme necessário */
+}
+
+.player-iframe {
+    position: fixed;
+    top: 80px; /* ajuste conforme necessário */
+    right: 0; /* Ajusta o elemento à direita da tela */
+    width: 560px; /* Ajuste conforme necessário */
+    height: 315px; /* Ajuste conforme necessário */
+}
+ 
+
+
+h1 {
+    position: absolute;
+    top: 420px; /* Ajuste conforme necessário para posicionar verticalmente */
+    right: 70px; /* Ajuste conforme necessário para posicionar horizontalmente */
+    font-family: 'Vina Sans', sans-serif;
+    color: #7cadf8; 
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+ h1:hover {
+    color: #ff6600; 
+    
+}
+

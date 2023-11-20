@@ -11,7 +11,8 @@
 </head>
 <body>
     <header>
-        <h1>Entre em Contato com a W & B RECORDINGS</h1>
+  
+    
         <nav>
             <ul>
                 <li><a href="./index.html">Página Inicial</a></li>
@@ -20,6 +21,18 @@
             </ul>
         </nav>
     </header>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('open');
+        });
+
+        // Adicione este trecho para fechar o menu ao clicar em um item
+        document.querySelectorAll('nav a').forEach(function (item) {
+            item.addEventListener('click', function () {
+                document.querySelector('nav').classList.remove('open');
+            });
+        });
+    </script>
     
     <main>
         <!-- Conteúdo da página de contato -->
@@ -28,7 +41,7 @@
     <footer class="">
         <p></p>
 
-        <audio controls autoplay loop
+        <audio controls  loop
             style="width: 80%; max-width: 400px; background-color: #333; color: #fff; border-radius: 10px; padding: 10px;">
             <source src="./assets/music/What Say You.mp3" type="audio/mp3">
             Seu navegador não suporta o elemento de áudio.

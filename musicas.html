@@ -1,87 +1,130 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> BIBLIOTECA </title>
     <script src="./script.js" defer></script>
-   
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+
 
 </head>
+
+
 <body>
 
-<h1>BEATS</h1>
+    <header>
+        <button class="menu-toggle">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Página Inicial</a></li>
+                <li><a href="./musicas.html">Músicas</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div id="music-player">
-    <audio controls autoplay id="audio-player">
-        Seu navegador não suporta o elemento de áudio.
-    </audio>
+    <!-- Restante do seu código ... -->
+    
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('open');
+        });
 
+        // Adicione este trecho para fechar o menu ao clicar em um item
+        document.querySelectorAll('nav a').forEach(function (item) {
+            item.addEventListener('click', function () {
+                document.querySelector('nav').classList.remove('open');
+            });
+        });
+    </script>
+
+
+    
+        
+
+        <iframe class="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=yv6oq0o0HxvT6fAG&amp;list=PLBPlc41Y4LqONDSwAyp0tFPWjH_uOfcGl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <a href="https://open.spotify.com/playlist/2v4m4gj9uPe9mmvzeLnH39?si=ba8504273558416c" class="page-title">EXCLUSIVE MY BEATS & SONGS</a>
+
+        <a href="https://youtube.com/playlist?list=PLBPlc41Y4LqOW98nkv7iO8pcPaeUZMzgb&si=tzNFuM6RExovCYz_" class="h2">
+            <h1>MY CHILLHOP BEATS</h1>
+        </a>
+        
+
+
+        
+
+        <iframe class="player-iframe" width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=spJZF8ojVF8NaFc5&amp;list=PLBPlc41Y4LqOW98nkv7iO8pcPaeUZMzgb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <ul id="playlist">
         <!-- Lista de reprodução será gerada dinamicamente aqui -->
     </ul>
-</div>
+    </div>
 
-<script>
-    async function fetchSongs() {
-        const musicFolderPath = './public/assets/music/INSTRUMENTALS';
-        const songs = [
-            'B4uGO.mp3',
-            'Heartburn - Instrumental.mp3',
-            // Adicione mais músicas conforme necessário
-        ];
+    <script>
+        async function fetchSongs() {
+            const musicFolderPath = './public/assets/music/INSTRUMENTALS';
+            const songs = [
 
-        return songs.map(file => {
-            return {
-                title: file.replace(/\.[^/.]+$/, ''),
-                artist: 'Desconhecido',
-                album: 'LIVE',
-                src: `${musicFolderPath}/${file}`,
-            };
-        });
-    }
+                // Adicione mais músicas conforme necessário
+            ];
 
-    async function loadSongs() {
-        const songs = await fetchSongs();
-        const playlistContainer = document.getElementById('playlist');
-        const audioPlayer = document.getElementById('audio-player');
+            return songs.map(file => {
+                return {
+                    title: file.replace(/\.[^/.]+$/, ''),
+                    artist: 'Desconhecido',
+                    album: 'LIVE',
+                    src: `${musicFolderPath}/${file}`,
+                };
+            });
+        }
 
-        songs.forEach((song, index) => {
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `<b>${song.title}</b> - ${song.artist} (${song.album})`;
-            listItem.addEventListener('click', () => playSong(song.src, audioPlayer));
-            playlistContainer.appendChild(listItem);
-        });
-    }
+        async function loadSongs() {
+            const songs = await fetchSongs();
+            const playlistContainer = document.getElementById('playlist');
+            const audioPlayer = document.getElementById('audio-player');
 
-    function playSong(src, audioPlayer) {
-        audioPlayer.src = src;
-        audioPlayer.play();
-    }
+            songs.forEach((song, index) => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `<b>${song.title}</b> - ${song.artist} (${song.album})`;
+                listItem.addEventListener('click', () => playSong(song.src, audioPlayer));
+                playlistContainer.appendChild(listItem);
+            });
+        }
 
-    loadSongs();
-</script>
-<footer class="">
-    <p></p>
+        function playSong(src, audioPlayer) {
+            audioPlayer.src = src;
+            audioPlayer.play();
+        }
 
-    <audio controls autoplay loop
-        style="width: 80%; max-width: 400px; background-color: #333; color: #fff; border-radius: 10px; padding: 10px;">
-        <source src="./assets/music/What Say You.mp3" type="audio/mp3">
-        Seu navegador não suporta o elemento de áudio.
-    </audio>
-    <ul class="redes-sociais">
-        <li><a href="https://open.spotify.com/user/wil.dgl?si=BxCu9-9WSVOPEguT-DdypQ">SPOTIFY</a></li>
-        <li><a href="https://instagram.com/wb_recordings?igshid=MzMyNGUyNmU2YQ==">INSTAGRAM</a></li>
-        <li><a href="https://m.soundcloud.com/wbrecordsmusic">SOUNDCLOUD</a></li>
-    </ul>
+        loadSongs();
+    </script>
+    <footer class="">
+        <p></p>
 
+        <audio controls loop
+            style="width: 80%; max-width: 400px; background-color: #333; color: #fff; border-radius: 10px; padding: 10px;">
+            <source src="./assets/music/What Say You.mp3" type="audio/mp3">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <ul class="redes-sociais">
+            <li><a href="https://open.spotify.com/user/wil.dgl?si=BxCu9-9WSVOPEguT-DdypQ">SPOTIFY</a></li>
+            <li><a href="https://instagram.com/wb_recordings?igshid=MzMyNGUyNmU2YQ==">INSTAGRAM</a></li>
+            <li><a href="https://m.soundcloud.com/wbrecordsmusic">SOUNDCLOUD</a></li>
+        </ul>
 
 
 
-    <p>W & B RECORDINGS &copy; </p>
-    <a href="./index.html">PÁGINA INICIAL</a>
-</footer>
+
+        <p>W & B RECORDINGS &copy; </p>
+        <a href="./index.html">PÁGINA INICIAL</a>
+    </footer>
 
 </body>
+
 </html>
