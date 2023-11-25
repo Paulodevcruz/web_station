@@ -258,5 +258,94 @@ h1 {
  h1:hover {
     color: #ff6600; 
     
+}.container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-content: flex-start; /* Alinhar as imagens no início do contêiner */
 }
 
+.thumbnail-container {
+    display: flex;
+    margin-right: 15px;
+}
+
+.thumbnail-container img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 5px;
+}
+
+.container img {
+    max-width: 10%;
+    height: auto;
+    animation: scroll 5s linear infinite;
+    animation-direction: alternate;
+    transition: transform 0.5s ease; /* Adiciona uma transição suave à propriedade transform */
+}
+
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-content: flex-start;
+    width: 100%; /* Ajuste a largura conforme necessário */
+}
+
+.container img {
+    max-width: 10%;
+    height: auto;
+    margin-right: 15px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 600px) {
+    /* Adicione estilos específicos para dispositivos com largura menor que 600px aqui */
+    body {
+        /* Exemplo: altere o tamanho da fonte ou ajuste a largura do conteúdo */
+    }
+
+    .container img {
+        /* Exemplo: ajuste o tamanho das imagens ou remova a animação de rolagem */
+        animation: none;
+    }
+}
+nav {
+    position: fixed; /* Manter o menu fixo na tela */
+    z-index: 2; /* Definir um valor maior para z-index */
+}
+
+.container {
+    position: relative; /* Adicionar posição relativa ao contêiner principal */
+    z-index: 1; /* Definir um valor menor para z-index */
+}
+
+.menu-toggle {
+    cursor: pointer;
+    position: fixed;
+    z-index: 3; /* Definir um valor ainda maior para z-index */
+}
+
+/* Restante do seu estilo... */
