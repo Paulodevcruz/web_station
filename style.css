@@ -3,8 +3,6 @@ body {
     background-position: center;
     background-repeat: repeat;
     background-size: 15vw;
-    /* Isso ajusta a imagem para cobrir toda a área do body */
-    /* Adicione outras propriedades de estilo conforme necessário */
     transition: background-size 0.5s ease;
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
@@ -324,7 +322,7 @@ body {
 @media (max-width: 600px) {
     /* Adicione estilos específicos para dispositivos com largura menor que 600px aqui */
     body {
-        /* Exemplo: altere o tamanho da fonte ou ajuste a largura do conteúdo */
+        
     }
 
     .container img {
@@ -362,11 +360,11 @@ nav {
         }
 
         #exploracao p {
-            font-size: 50px;
+            font-size: 60px;
             color: #f3e8e8;
             text-transform: uppercase;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            animation: rainbow 5s infinite;
+            animation: rainbow 3s infinite;
         }
 
         @keyframes rainbow {
@@ -374,7 +372,86 @@ nav {
             25% { color: #ffcc00; }
             50% { color: #ff6666; }
             75% { color: #6699ff; }
-            100% { color: #f3e8e8; }
+            100% { color: #3213bb; }
         }
 
     
+
+
+        .custom-audio {
+            width: 80%;
+            max-width: 400px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px auto; /* Adiciona margem para centralizar o elemento */
+        }
+        
+        /* Ajuste para dispositivos móveis e telas menores */
+        @media only screen and (max-width: 600px) {
+            .custom-audio {
+                width: 100%;
+                max-width: none;
+            }
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        /* ... (restante do seu estilo) ... */
+        
+        /* Ajuste para dispositivos móveis e telas menores */
+        @media only screen and (max-width: 600px) {
+            .video-iframe,
+            .player-iframe {
+                width: 100%; /* Define uma largura máxima para telas menores */
+                margin: 10px 0; /* Adiciona margem superior e inferior */
+            }
+        
+            .page-title,
+            .h2 {
+                margin: 1rem 0; /* Adiciona espaçamento superior e inferior */
+                font-size: 1.5rem; /* Reduz o tamanho da fonte para telas menores */
+                text-align: center; /* Centraliza o texto */
+            }
+        }
+        
+        /* Estilos para o contêiner dos links */
+.playlist-container {
+    display: flex; /* Usa flexbox para colocar os elementos ao lado um do outro */
+    justify-content: space-around; /* Distribui o espaço igualmente entre os elementos */
+    flex-wrap: wrap; /* Permite que os elementos se movam para a próxima linha se não houver espaço suficiente */
+}
+
+/* Estilos para os links das playlists */
+.page-title,
+.h1 {
+    display: block; /* Faz com que os links ocupem toda a largura disponível */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 10px; /* Adiciona margem para espaçamento e ajusta para dispositivos maiores */
+    font-size: 24px; /* Ajusta o tamanho da fonte conforme necessário */
+    color: #007bff; /* Adicione a cor desejada para os links */
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+    
+}
+
+/* Estilos para o título h1 dentro do link h2 */
+.h1 {
+    font-size: 36px; /* Ajusta o tamanho da fonte conforme necessário */
+    font-weight: bold; /* Adiciona negrito ao texto */
+}
+
+/* Ajuste para dispositivos móveis e telas menores */
+@media only screen and (max-width: 600px) {
+    .page-title,
+    .h1 {
+        margin: 20px 0; /* Adiciona espaço superior e inferior e remove a margem lateral para dispositivos menores */
+    }
+}
