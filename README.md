@@ -10,11 +10,7 @@ Bem-vindo(a) ao Música Descoberta, seu destino para explorar artistas, discogra
 
 ## Funcionalidades Destacadas
 
-- **Discografia**: Explore os álbuns de seus artistas preferidos, apreciando as capas e descobrindo novas músicas.
-
-- **Biografias**: Conheça mais sobre os artistas, suas carreiras e histórias fascinantes.
-
-- **Letras de Músicas**: Encontre as letras das suas músicas favoritas e mergulhe nas palavras que inspiram.
+ - **"Explore a Discografia e Letras: Conheça os álbuns dos seus artistas favoritos e mergulhe nas letras através da playlist destacada na página de Músicas."
 
 ## Tecnologias Utilizadas
 
