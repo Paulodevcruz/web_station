@@ -352,3 +352,29 @@ nav {
         float: left;
         margin-right: 800px; /* Ajuste conforme necessário para adicionar espaço à direita do iframe */
     }
+
+    #exploracao {
+        background-color: rgba(250, 5, 5, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        #exploracao p {
+            font-size: 50px;
+            color: #f3e8e8;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: rainbow 5s infinite;
+        }
+
+        @keyframes rainbow {
+            0% { color: #f3e8e8; }
+            25% { color: #ffcc00; }
+            50% { color: #ff6666; }
+            75% { color: #6699ff; }
+            100% { color: #f3e8e8; }
+        }
+
+    
