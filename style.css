@@ -347,5 +347,8 @@ nav {
     position: fixed;
     z-index: 3; /* Definir um valor ainda maior para z-index */
 }
-
-/* Restante do seu estilo... */
+.video-iframe
+     {
+        float: left;
+        margin-right: 800px; /* Ajuste conforme necessário para adicionar espaço à direita do iframe */
+    }
