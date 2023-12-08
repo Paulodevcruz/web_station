@@ -10,7 +10,7 @@ Bem-vindo(a) ao Música Descoberta, seu destino para explorar artistas, discogra
 
 ## Funcionalidades Destacadas
 
- - **"Explore a Discografia e Letras: Conheça os álbuns dos seus artistas favoritos e mergulhe nas letras através da playlist destacada na página de Músicas."
+ - **"Explore a Discografia e Letras: Conheça os álbuns dos seus artistas favoritos e mergulhe nas letras através da playlist destacada na página de Músicas com player incluso."
 
 ## Tecnologias Utilizadas
 
