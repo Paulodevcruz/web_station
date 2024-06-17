@@ -27,6 +27,6 @@ Bem-vindo(a) ao Música Descoberta, seu destino para explorar artistas, discogra
 
 2. Utilize a barra de pesquisa para descobrir artistas por nome, discografia ou letras de músicas.
 
-3. Clique nos resultados para obter informações detalhadas sobre os artistas.
+
 
 # Desfrute da Sua Jornada Musical! 🎶
