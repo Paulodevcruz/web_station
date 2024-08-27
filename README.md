@@ -14,7 +14,7 @@ Bem-vindos(as) ao Música Descoberta, seu destino para explorar artistas, discog
 
 ## Tecnologias Utilizadas
 
-- **HTML**: Estruturação sólida para a página.
+- **HTML**: Estruturação sólida e semântico para a página.
 
 - **CSS**: Estilo elegante para uma experiência visual atraente.
 
