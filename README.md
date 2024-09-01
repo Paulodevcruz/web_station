@@ -6,7 +6,7 @@
 
 
 
-Bem-vindos(as) ao Música Descoberta, seu destino para explorar artistas, discografias e letras de músicas. Este projeto oferece uma experiência envolvente e informativa para os amantes da música..
+Bem-vindos(as) ao Música Descoberta, seu destino para explorar artistas, discografias e letras de músicas. Este projeto oferece uma experiência envolvente e informativa para os amantes da música
 
 ## Funcionalidades Destacadas
 
